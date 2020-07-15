@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Watchful eye  </string>
+    <string name="app_name2">Watchful\neye  </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Notification app</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="Notification">Notifications</string>
+    <string name="share">Share</string>
+    <string name="ViewFullPicture">Full picture</string>
+    <string name="FeedBack">Give Feedback</string>
+    <string name="rate">Rate</string>
+    <string name="Testing">Testing</string>
+    <string name="Notes">Notes</string>
+    <string name="Exit">Exit</string>
+    <string name="Request">Request screenshot</string>
+    <string name="nav_emergency">Emergency call</string>
+    <string name="Call">Call</string>
+    <string name="Copy">Copy link</string>
+    <string name="Download">Download</string>
+    <string name="Delete">Delete</string>
+    <string name="ViewRequests">View requested</string>
+    <string name="Bookmark">Bookmark</string>
+    <string name="Bookmarks">Bookmarks</string>
+    <string name="RemoveFromBookmarks">Remove From Bookmarks</string>
+
+    //AboutUs
+    <string name="AboutUs">About us</string>
+    <string name="Thesis">Thesis_project</string>
+    <string name="Version">Version</string>
+    <string name="VersionNB">1.10</string>
+    <string name="Licence">Licence</string>
+    <string name="Authors">Authors</string>
+    <string name="Author1">Hadi Kachmar</string>
+    <string name="Author2">Ahmad Cheaib</string>
+    <string name="Company">Company</string>
+    <string name="Location">Location</string>
+    <string name="CompanyName">HcK</string>
+    <string name="Address">lebanon/Nabatieh 3265 University road</string>
+
+    //main
+    <string name="CheckLatestUpdates">Check latest updates</string>
+    <string name="CallSomeone">Call someone</string>
+    <string name="TakeView">Take a view</string>
+    <string name="Favorits">Check your favorite image</string>
+
+    //menu
+    <string name="UploadTest">Upload test</string>
+    <string name="RequestTest">Request test</string>
+
+</resources>

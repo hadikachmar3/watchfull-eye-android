@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:id="@+id/full_screen_layout"
+
+    tools:context=".ImageFull">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:background="@color/black"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:id="@+id/toolbar_fullImage"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:contentInsetStartWithNavigation="0dp"
+
+                app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar" >
+                <RelativeLayout
+                    android:foreground="@drawable/ripple_grey"
+                    android:onClick="backFull"
+                    app:layout_anchorGravity="left"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:onClick="backFull"
+                    android:foreground="@drawable/ripple_grey"
+                    android:clickable="true"
+
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/left_arrow"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:text="View"
+                    android:textColor="@color/white"
+                     />
+                </RelativeLayout>
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/amaranth"
+                    android:text="View"
+                    android:textColor="@color/white"
+                    app:layout_anchor="@+id/appBarLayout"
+                    app:layout_anchorGravity="center" />
+                <ImageView
+                    android:foreground="@drawable/ripple_grey"
+                    android:clickable="true"
+                    android:onClick="FullImageSettings"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/ic_settings_white"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:text="View"
+                    android:textColor="@color/white"
+                    app:layout_anchorGravity="right" />
+
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:foreground="@drawable/ripple_grey"
+                    android:clickable="true"
+                    android:onClick="FullImageSave"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/floppy_disk"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:text="View"
+                    android:textColor="@color/white"
+                    app:layout_anchorGravity="right" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"> <!--        android:background="#FF0000"-->
+
+
+            <!--        <TextView-->
+            <!--            android:visibility="invisible"-->
+            <!--            android:id="@+id/text_view_name"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center_horizontal"-->
+            <!--            android:layout_marginTop="8dp"-->
+            <!--            android:layout_marginBottom="8dp"-->
+            <!--            android:text="Name"-->
+            <!--            android:textColor="@android:color/white"-->
+            <!--            android:textSize="20sp" />-->
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.github.ybq.android.spinkit.SpinKitView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/loader"
+                    style="@style/SpinKitView.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:SpinKit_Color="@color/colorAccent"
+                    tools:ignore="MissingConstraints" />
+                <!--            <ProgressBar-->
+                <!--                android:id="@+id/homeprogress"-->
+                <!--                android:layout_width="50dp"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:background="#00ffffff"-->
+                <!--                android:layout_height="50dp" />-->
+                <com.jsibbold.zoomage.ZoomageView
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    android:layout_margin="3dp"
+                    android:id="@+id/image_Full"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                   android:layout_height="@dimen/_300sdp" />
+            </FrameLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

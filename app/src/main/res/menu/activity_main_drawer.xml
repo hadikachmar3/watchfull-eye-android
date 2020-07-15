@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_Bookmarks"
+            android:icon="@drawable/ic_bookmark"
+            android:title="@string/Bookmarks" />
+        <item
+
+            android:id="@+id/nav_notificationss"
+            android:icon="@drawable/notification"
+            android:title="@string/Notification" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_testing"
+            android:icon="@drawable/app_test"
+            android:title="@string/UploadTest" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_testing2"
+            android:icon="@drawable/app_test"
+            android:title="@string/RequestTest" />
+
+        <item
+            android:id="@+id/nav_Requets"
+            android:icon="@drawable/take_screenshot"
+            android:title="Requested screenshots" />
+
+
+
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_emergency"
+                android:icon="@drawable/hospital"
+                android:title="@string/nav_emergency" />
+            <item
+                android:id="@+id/nav_FeedBack"
+                android:icon="@drawable/feedback"
+                android:title="@string/FeedBack" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/exit"
+                android:title="@string/Exit" />
+<!--            <item-->
+<!--                android:id="@+id/nav_Like"-->
+<!--                android:icon="@drawable/ic_like_bar"-->
+<!--                android:title="@string/Like" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_whatsappG"-->
+<!--                android:icon="@drawable/ic_whatsapp"-->
+<!--                android:title="@string/menu_whatsapp" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_discord"-->
+<!--                android:icon="@drawable/ic_discord"-->
+<!--                android:title="@string/menu_discord" />-->
+
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    tools:context=".MainBottomSheet">
+
+
+    <TextView
+    android:id="@+id/textView3"
+    android:drawableLeft="@drawable/ic_copy"
+    android:drawableStart="@drawable/ic_copy"
+    android:text="@string/Copy"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    style="@style/ActionItem"
+    />
+
+    <TextView
+        android:id="@+id/ExitText"
+        android:drawableLeft="@drawable/exit"
+        android:drawableStart="@drawable/exit"
+        android:text="@string/Exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        style="@style/ActionItem"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

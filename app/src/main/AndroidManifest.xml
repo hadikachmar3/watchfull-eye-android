@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.notificationproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_violet"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_violet"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Tokenn"></activity>
+        <activity
+            android:name=".ImageFull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bookmarks.Bookmarks_Bottom"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Bookmarks.BookmarksActivity" />
+        <activity android:name=".Settings" />
+        <activity android:name=".AboutApp" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainBottomSheet"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".bottom"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Requests.RequestUploads" />
+        <activity android:name=".Requests.RequestedImagesDisplay" />
+        <activity
+            android:name=".Feedback"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Notifications.ImagesUpload" />
+        <activity android:name=".Notifications.ImagesActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".Firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.notificationproject"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".DownloadSongService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

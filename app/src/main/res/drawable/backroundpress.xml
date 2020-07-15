@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="StateListReachable">
+
+
+    <shape>
+
+        <corners android:bottomLeftRadius="7dp"
+            android:bottomRightRadius="7dp"
+            android:topLeftRadius="7dp"
+            android:topRightRadius="7dp" />
+    </shape>
+    <item android:drawable="@drawable/violetgradient" android:state_pressed="true"
+
+        /> <!-- pressed -->
+    <item android:drawable="@drawable/violetwallpaper" android:state_focused="true" /> <!-- focused -->
+
+
+</selector>
