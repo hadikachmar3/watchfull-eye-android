@@ -1,1 +1,1 @@
-"# watchfull-eye-android" 
+![first screen](https://github.com/hadikachmar3/watchfull-eye-android/blob/master/project%20screenshots/Screenshot_20200714_015147_com.example.notificationproject.jpg)
